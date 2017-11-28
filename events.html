@@ -40,6 +40,8 @@
         <link href="css/owl.theme.css" rel="stylesheet" type="text/css" media="screen">
         <!--cube css-->
         <link href="cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css">
+        <!--fancybox-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -83,7 +85,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/1219606">More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/1219606" class="button alt iframe">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +106,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/1259496" >More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/1259496" class="button alt iframe" >More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +126,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/1235811">More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/1235811" class="button alt iframe">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +145,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/1148149">More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/1148149" class="button alt iframe">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +164,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/1121832">More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/1121832" class="button alt iframe">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +183,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/1131427">More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/1131427" class="button alt iframe">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +202,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/1112208">More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/1112208" class="button alt iframe">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +221,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/1083379">More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/1083379" class="button alt iframe">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +240,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/557995">More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/557995" class="button alt iframe">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -257,7 +259,7 @@
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                        <a href="https://howard.campuslabs.com/engage/event/312510">More Info</a>
+                                        <a href="https://howard.campuslabs.com/engage/event/312510" class="button alt iframe">More Info</a>
                                     </div>
                                 </div>
                             </div>
@@ -316,6 +318,7 @@
 
 		<!--scripts and plugins -->
         <!--must need plugin jquery-->
+
         <script src="js/jquery.min.js"></script>        
         <!--bootstrap js plugin-->
         <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>       
@@ -344,5 +347,17 @@
         <!--cube portfolio plugin-->
         <script src="cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
          <script src="js/cube-portfolio.js" type="text/javascript"></script>
+
+        <!--fancybox-->
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script type="text/javascript">
+         $(document).ready(function() {
+            $(".iframe").fancybox({
+                type: 'iframe'
+            });
+        });
+        </script>
+
 	</body>
 </html>

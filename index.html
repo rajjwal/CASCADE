@@ -20,7 +20,11 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
+		
 		<link rel="stylesheet" href="css/loader.css" />
+
+		<!--fancybox-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
 	</head>
 
 	<body>
@@ -99,21 +103,21 @@
 				<div class="row">
 					<div class="6u">
 						<section class="special">
-							<a href="events/siesta" class="image fit"><img src="https://static.campuslabsengage.com/discovery/images/events/social.jpg" alt="" /></a>
+							<a class="image fit"><img src="https://static.campuslabsengage.com/discovery/images/events/social.jpg" alt="" /></a>
 							<h3>Rainbow Coalition Ball</h3>
 							<p>This event is where many individuals will be able to "walk" aka compete in various categories for trophies.</p>
 							<ul class="actions">
-								<li><a href="https://howard.campuslabs.com/engage/event/1219606" class="button alt">Learn More</a></li>
+								<li><a href="https://howard.campuslabs.com/engage/event/1219606" class="button alt iframe">Learn More</a></li>
 							</ul>
 						</section>
 					</div>
 					<div class="6u">
 						<section class="special">
-							<a href="events/projectDream/" class="image fit" ><img src="https://images.collegiatelink.net/clink/images/b3e759a6-bd67-4c90-b59b-98ac9d3a013d6b86abab-2612-4b9c-a576-1c3ddba154d5.png?preset=large-w" alt="" /></a>
+							<a class="image fit" ><img src="https://images.collegiatelink.net/clink/images/b3e759a6-bd67-4c90-b59b-98ac9d3a013d6b86abab-2612-4b9c-a576-1c3ddba154d5.png?preset=large-w" alt="" /></a>
 							<h3>Bi-Erasure - Erasing of Bisexuality</h3>
 							<p>This is a discussion based event that will identify the ways in which Bisexuality is erased in the media and how that translates into our conversations and assumptions. This will tackle the idea that erases the legitimacy of bisexuality, especially in the black community. </p>
 							<ul class="actions">
-								<li><a href="https://howard.campuslabs.com/engage/event/1259496" class="button alt">Learn More</a></li>
+								<li><a href="https://howard.campuslabs.com/engage/event/1259496" class="button alt iframe">Learn More</a></li>
 							</ul>
 						</section>
 					</div>
@@ -163,5 +167,21 @@
 				</div>
 			</div>
 		</footer>
+
+
+		<!--scripts and plugins -->
+        <!--must need plugin jquery-->
+        <script src="js/jquery.min.js"></script>
+
+        <!--fancybox-->
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script type="text/javascript">
+         $(document).ready(function() {
+            $(".iframe").fancybox({
+                type: 'iframe'
+            });
+        });
+        </script>
 	</body>
 </html>
